@@ -26,7 +26,7 @@ console.log(`${six}<${five}`, bool0);
 console.log(bool);
 
 let favProgLang = "python";
-let newLearn = "JS, HTML & Python";
+let newLearn = "JS, HTML & CSS";
 
 console.log(
   `My favorite programming language is ${favProgLang} but I'm now learning ${newLearn} and finding it fun!`
@@ -38,6 +38,8 @@ if ((aboutMe.typeof = String)) {
   console.log(`${aboutMe}`);
 } else if ((aboutMe.typeof = bool)) {
   console.log("That's not right");
+} else {
+  console.log("values is not a string");
 }
 
 if (aboutMe.length > 10) {
@@ -45,3 +47,68 @@ if (aboutMe.length > 10) {
 } else {
   console.log("The string is less than ten characters");
 }
+
+function sayWelcome(user) {
+  console.log("Hello Wene");
+}
+
+sayWelcome();
+
+function sayHello(username, age, location) {
+  console.log(
+    `Welcome to my page, ${username}, who is ${age} years old, from ${location}.`
+  );
+}
+
+sayHello("wene", 30, "Norwich");
+
+function add(param1, param2) {
+  let combo = param1 + param2;
+  console.log(`The sum of both parameters is ${combo}`);
+
+  return param1 + param2;
+}
+
+add(5, 27);
+add(294756, 8484);
+
+function multiply(param1, param2) {
+  let combo = param1 * param2;
+  console.log(`The multiplication of both parameters is ${combo}`);
+
+  return param1 * param2;
+}
+multiply(5, 27);
+multiply(294756, 8484);
+
+function division(param1, param2) {
+  let combo = param1 / param2;
+  console.log(`The division of both parameters is ${combo}`);
+
+  return param1 / param2;
+}
+division(5, 27);
+division(294756, 8484);
+
+function subtract(param1, param2) {
+  let combo = param1 - param2;
+  console.log(`The subtraction of both parameters is ${combo}`);
+
+  return param1 - param2;
+}
+subtract(5, 27);
+subtract(294756, 8484);
+
+function calculate(a, b, operator) {
+  if (operator === "+") {
+    return add(a, b);
+  } else if (operator === "-") {
+    return subtract(a, b);
+  } else if (operator === "*") {
+    return multiply(a, b);
+  } else if (operator === "/") {
+    return division(a, b);
+  }
+}
+
+calculate(5, 3, "*");
