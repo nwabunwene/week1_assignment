@@ -31,3 +31,17 @@ let newLearn = "JS, HTML & Python";
 console.log(
   `My favorite programming language is ${favProgLang} but I'm now learning ${newLearn} and finding it fun!`
 );
+
+let aboutMe = "I am a moderately pleasant person";
+
+if ((aboutMe.typeof = String)) {
+  console.log(`${aboutMe}`);
+} else if ((aboutMe.typeof = bool)) {
+  console.log("That's not right");
+}
+
+if (aboutMe.length > 10) {
+  console.log("The string is greater than 10 characters");
+} else {
+  console.log("The string is less than ten characters");
+}
