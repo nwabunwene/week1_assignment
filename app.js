@@ -112,3 +112,39 @@ function calculate(a, b, operator) {
 }
 
 calculate(5, 3, "*");
+
+// testing out the DOM
+const body = document.querySelector("body");
+console.log(body);
+
+const h1 = document.querySelector("h1");
+console.log(h1);
+
+const p = document.createElement("p");
+p.textContent =
+  "This is my attempt to create a new paragraph element on the html index page using javascript. The necessary processes involved was declaring a variable using the const keyword, naming the variable after the p-tag and using the document.createElement('P) method. Then I used this method to add text to my p tag p.textContent. For this paragraph to show up on my webpage, I would need to append it using body.appendChild(p). I had to add one more step to it which was apply the querySelector to the main section and then use main.appendChild(p). I think this is absolutely brilliant!";
+const main = document.querySelector("main");
+main.appendChild(p);
+
+//Attempt to remove an element. I will first add an element and then try to remove it.
+
+const p1 = document.createElement("p1");
+p1.textContent =
+  "This is text which I will remove, I'm only trying out the remove method to see how it works.";
+main.appendChild(p1);
+
+// creating a list of items
+const ol = document.createElement("ol");
+ol.textContent = "first item in ordered list";
+const header = document.querySelector("header");
+header.appendChild(ol);
+
+//creating the second list item
+const ol0 = document.createElement("ol0");
+ol0.textContent = "second item in ordered list";
+header.appendChild(ol0);
+// const ol = document.createElement("ol");
+// ol.textContent = "second item in ordered list";
+// header.appendChild(ol);
+
+// "second item in ordered list", "third item in ordered list", "fourth item in ordered list";
