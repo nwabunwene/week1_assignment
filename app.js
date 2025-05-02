@@ -148,3 +148,17 @@ header.appendChild(ol0);
 // header.appendChild(ol);
 
 // "second item in ordered list", "third item in ordered list", "fourth item in ordered list";
+
+// playing around with events: handlers and listeners
+const button = document.querySelector("button");
+console.log(button.textContent);
+
+//event handler
+
+function handleClick() {
+  const button = document.querySelector("button");
+  button.textContent = "Wene clicked the button";
+  console.log(button.textContent);
+}
+
+button.addEventListener("click", handleClick);
